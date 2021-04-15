@@ -16,8 +16,8 @@ Recommend running the docker on Mac OS, but should be able to run on Windows and
     services:
      gui:
       build: .
-    	environment:
- 		  - DISPLAY={IP}:0
+       environment:
+ 	    - DISPLAY={IP}:0
     ```
 
 - Run `socat TCP-LISTEN:6000,reuseaddr,fork UNIX-CLIENT:\"$DISPLAY\"`
