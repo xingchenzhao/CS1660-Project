@@ -33,3 +33,4 @@ Recommend running the docker on Mac OS, but should be able to run on Windows and
   - run `docker-compose down`
 
 ## Video Walkthrough
+https://pitt.box.com/s/9x87ml6raw102ilumsg3b7h2neswlaxy
