@@ -26,6 +26,10 @@ Recommend running the docker on Mac OS, but should be able to run on Windows and
 - Some apps require password.
   - Orange's password: orange
   - VS Code's password: vscode
-- When done, click the X button, and run `docker-compose stop` and `docker-compose down`
+- When done
+  - click the X button 
+  - press `ctrl + c` to stop running
+  - run `docker-compose stop` 
+  - run `docker-compose down`
 
 ## Video Walkthrough
