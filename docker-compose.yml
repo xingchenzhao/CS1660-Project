@@ -1,0 +1,63 @@
+version: '3.8'
+
+services:
+  gui:
+    build: .
+    environment:
+      - DISPLAY=10.0.0.83:0
+
+  rstudio:
+    image: rocker/rstudio
+    ports:
+      - 8787:8787
+    environment:
+      - DISABLE_AUTH=true
+
+  jupyter:
+    image: 'jupyter/base-notebook'
+    ports:
+      - 8888:8888
+    environment:
+      - JUPYTER_TOKEN=1660
+
+  orange:
+    image: acopar/orange-docker
+    environment:
+      - PASSWORD=orange
+    ports:
+      - 6901:6901
+
+  vscode:
+    image: codercom/code-server:latest
+    environment:
+      - PASSWORD=vscode
+    ports:
+      - 8080:8080
+
+  hadoop:
+    image: harisekhon/hadoop
+    ports:
+      - 8042:8042
+      - 8088:8088
+      - 19888:19888
+      - 50070:50070
+      - 50075:50075
+
+  spark:
+    image: jupyter/pyspark-notebook
+    ports:
+      - 8887:8888
+    environment:
+      - JUPYTER_TOKEN=spark
+
+  tensorflow:
+    image: jupyter/tensorflow-notebook
+    ports:
+      - 8383:8888
+    environment:
+      - JUPYTER_TOKEN=tensorflow
+
+  markdown:
+    image: v4tech/markdown-editor
+    ports:
+      - 12345:80
