@@ -24,7 +24,8 @@ Recommend running the docker on Mac OS, but should be able to run on Windows and
 - Then open a new terminal tab, and run `docker-compose up --build`
 - Now the GUI should pop up, and you can use all tools in the application.
 - Some apps require password.
-- - e
+  - Orange's password: orange
+  - VS Code's password: vscode
 - When done, click the X button, and run `docker-compose stop` and `docker-compose down`
 
 ## Video Walkthrough
