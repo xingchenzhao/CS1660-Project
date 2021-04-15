@@ -20,7 +20,7 @@ Recommend running the docker on Mac OS, but should be able to run on Windows and
     				- DISPLAY={IP}:0
     ```
 
-- Run `socat TCP-LISTEN:6000,reusead,fork UNIX-CLIENT:\"$DISPLAY\"`
+- Run `socat TCP-LISTEN:6000,reused,fork UNIX-CLIENT:\"$DISPLAY\"`
 - Then open a new terminal tab, and run `docker-compose up --build`
 - Now the GUI should pop up, and you can use all tools in the application.
 - When done, click the X button, and run `docker-compose stop` and `docker-compose down`
